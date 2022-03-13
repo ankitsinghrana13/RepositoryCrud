@@ -1,0 +1,30 @@
+﻿@model RepositoryCrud.Models.Employee
+@{
+}
+
+<div class="row">
+    <div class="col-6 offset-3">
+        <form asp-action="Edit" asp-controller="Employee" method="post">
+            <div class=" form-check-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" placeholder="Enter your name" class="form-control" />
+            </div>
+            <div class=" form-check-group">
+                <label asp-for="Gender"></label>
+                <input asp-for="Gender" placeholder="Enter your Gender" class="form-control" />
+            </div>
+            <div class=" form-check-group">
+                <label asp-for="Address"></label>
+                <input asp-for="Address" placeholder="Enter your Address" class="form-control" />
+            </div>
+            <div class=" form-check-group">
+                <label asp-for="Mobile"></label>
+                <input asp-for="Mobile" placeholder="Enter your Mobile" class="form-control" />
+            </div>
+            <div>
+                <button class="btn btn-danger" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</div>
